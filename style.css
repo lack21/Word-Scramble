@@ -1,0 +1,138 @@
+/* lear */
+/* Word Scramble */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Colors */
+/* Button Mixin */
+body {
+  background-color: #f8f9fa;
+  color: #3f3f3f;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.dark-body {
+  background-color: #1f1f2f;
+  color: #f8f9fa;
+}
+
+.blurred {
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: min(400px, 90%);
+  min-height: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 1rem;
+  margin: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  outline: 1px solid #3f3f3f;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  color: #1f1f2f;
+}
+.container .title {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+.container hr {
+  margin-top: -4rem;
+}
+.container .random-letters {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 10px;
+}
+.container #input-field {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border: 1px solid #3f3f3f;
+  outline: none;
+}
+.container .btns {
+  display: flex;
+  gap: 1rem;
+}
+.container .btns .refresh-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #3f3f3f;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  color: #f8f9fa;
+}
+.container .btns .refresh-btn:hover {
+  background-color: #1f1f2f;
+}
+.container .btns .check-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #f69636;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  color: #f8f9fa;
+}
+.container .btns .check-btn:hover {
+  background-color: #f68626;
+}
+
+/* Switch Button */
+.switch-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  background-color: #f69636;
+  color: #f8f9fa;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+}
+.switch-btn:hover {
+  background-color: #f68626;
+}/*# sourceMappingURL=style.css.map */
